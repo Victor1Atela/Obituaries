@@ -1,0 +1,18 @@
+<!-- views/obituary.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= obituary.metaTitle %></title>
+    <meta name="description" content="<%= obituary.metaDescription %>">
+    <meta property="og:image" content="<%= obituary.socialImage %>">
+    <meta property="og:description" content="<%= obituary.socialDescription %>">
+</head>
+<body>
+    <h1><%= obituary.name %></h1>
+    <p> Born: <%= obituary.dob %></p>
+    <p> Passed away: <%= obituary.dod %></p>
+    <p><%= obituary.biography %></p>
+</body>
+</html>
